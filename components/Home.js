@@ -38,7 +38,7 @@ function Home() {
 
   let moviesData = [];
   useEffect(() => {
-    fetch("https://mymoviz-back-six.vercel.app/")
+    fetch("https://mymoviz-back-six.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
         moviesData = [];
